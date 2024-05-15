@@ -191,7 +191,8 @@ hr {
 }
 
 .btn-edit {
-  color: black;
+  color: white;
+  background-color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: 1px solid gray;
@@ -199,15 +200,19 @@ hr {
 }
 
 .btn-delete {
+  color: white;
+  background-color: black;
   padding: 0.5rem 1rem;
-  background-color: white;
   border: 1px solid gray;
   border-radius: 5px;
 }
 
-.btn-edit:hover,
+.btn-edit:hover {
+  background-color: blue;
+  color: white;
+}
 .btn-delete:hover {
-  background-color: black;
+  background-color: red;
   color: white;
 }
 
