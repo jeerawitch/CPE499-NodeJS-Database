@@ -1,0 +1,489 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2rem 3rem 0 3rem;
+}
+
+.banner-1 {
+  width: 100%;
+}
+
+.banner-2 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.line-head-1 {
+  margin: 3rem 1rem;
+}
+
+.list-product {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  margin: 4rem 3rem;
+}
+
+.list-product-shoes {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+}
+
+.list-shoes-image {
+  width: 120px;
+}
+
+.list-product-shirt {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+}
+
+.list-shirt-image {
+  width: 100px;
+}
+
+.list-product-jeans {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+}
+
+.list-jeans-image {
+  width: 100px;
+}
+
+.show-all {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.show-all:hover {
+  text-decoration: underline;
+}
+
+.line-head-2 {
+  margin: 3rem 1rem 0 1rem;
+}
+
+.shoes {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 3rem 0 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.shoes-image {
+  width: 80%;
+}
+
+.T-shirt {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.shirt-image {
+  width: 70%;
+}
+
+.jeans {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 3rem 0 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.jeans-image {
+  width: 70%;
+}
+
+.type-product {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.subtopic {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.shoes-product,
+.shirt-product,
+.jeans-product {
+  width: 100%;
+}
+
+.container {
+  padding: 1rem 2rem;
+}
+
+.container-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  -webkit-box-shadow: 0px 2px 12px -6px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 2px 12px -6px rgba(66, 68, 90, 1);
+  box-shadow: 0px 2px 12px -6px rgba(66, 68, 90, 1);
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+}
+
+.title-product,
+.description-product,
+.price-product {
+  margin: 0.5rem;
+}
+
+.edit-remove {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.btn-edit {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.btn-delete {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  background-color: black;
+  color: white;
+}
+
+.name {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-text-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+.about-card-image {
+  width: 350px;
+}
+
+.about-title-product {
+  text-align: center;
+}
+
+.form-container {
+  min-height: 100vh;
+  margin: 3rem;
+}
+
+.form-main {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.form-product {
+  width: 100%;
+}
+
+.image-form {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-control {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+input {
+  height: 25px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+textarea {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.btn-submit {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.btn-submit:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 380px) {
+  .list-product-shoes,
+  .list-product-shirt,
+  .list-product-jeans {
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    padding: 0 0.5rem;
+  }
+  .banner-2 {
+    display: none;
+  }
+
+  .line-head-1 {
+    margin: 2rem 0.5rem;
+  }
+
+  .list-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 3rem 2.5rem 3rem;
+  }
+
+  .list-shoes-image {
+    width: 100px;
+  }
+
+  .list-product-shirt {
+    padding: 0.5rem 2rem;
+  }
+
+  .line-head-2 {
+    margin: 2rem 0.5rem;
+  }
+
+  .shoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .T-shirt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .jeans {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .shoes-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .shirt-image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .jeans-image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .container-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-container {
+    flex-direction: column;
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .form-main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .image-form {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-control {
+    padding: 0 1rem;
+  }
+
+  .btn-submit {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+  .list-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 3rem 2.5rem 3rem;
+  }
+
+  .shoes {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .T-shirt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .jeans {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    padding: 0 2rem;
+  }
+
+  .shoes-image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .shirt-image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .jeans-image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .container-product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .image-form {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn-submit {
+    margin-bottom: 2rem;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,115 @@
+extends ./layouts/layout.pug
+
+block style
+    link(rel="stylesheet", href="/css/style.css")
+
+block content
+    .banner
+        .banner-1
+            a(href="/products")
+                img.banner-image(src="./images/sale.jpeg", alt="sale.jpeg")
+        .banner-2
+            a(href="/products")
+                img.banner-image(src="./images/shirt-sale.jpeg", alt="shirt-sale.jpeg")
+            a(href="/products")
+                img.banner-image(src="./images/adidas-sale.jpeg", alt="adidas-sale.jpeg")
+    
+    hr.line-head-1
+
+    .list-product
+        .list-product-shoes
+            div
+                img.list-shoes-image(src="./images/list-shoes.jpeg", alt="shoes.jpeg")
+            div
+                h2 Shoes
+                a(href="/products").show-all Show All
+        .list-product-shirt
+            div
+                img.list-shirt-image(src="./images/list-shirt.png", alt="shirt.png")
+            div
+                h2 T-Shirt
+                a(href="/products").show-all Show All
+        .list-product-jeans
+            div
+                img.list-jeans-image(src="./images/list-jeans.png", alt="jeans.png")
+            div
+                h2 Jeans
+                a(href="/products").show-all Show All
+
+    hr.line-head-2
+
+    .shoes
+        .shoes-detail
+            h1.type-product shoes
+            ul
+                li
+                    h3.subtopic Product Technology System
+                    p สินค้าได้รับการออกแบบด้วยเทคโนโลยีที่ทันสมัยเพื่อให้ลูกค้าได้รับประสบการณ์ที่สบายที่สุดโดยใช้เทคโนโลยีที่เป็นเอกลักษณ์และวัสดุคุณภาพสูง  
+                li
+                    h3.subtopic Modern Design
+                    p สินค้าของเราไม่เพียงแต่ดูสวยงาม แต่ยังเน้นดีไซน์ที่ทันสมัย
+                li
+                    h3.subtopic Completeness
+                    p ใส่ใจทุกรายละเอียดเพื่อให้แน่ใจว่าผลิตภัณฑ์ของเรามีคุณภาพ
+                li
+                    h3.subtopic Diversity
+                    p ไม่ว่าจะต้องการใช้งานทุกวันหรือสำหรับวันพิเศษ ผลิตภัณฑ์ของเรามีรูปแบบหลากหลายที่ตอบโจทย์ทุกความต้องการ
+                li
+                    h3.subtopic Ultimate Comfort
+                    p สินค้าถูกออกแบบมาเพื่อให้ได้รับประสบการณ์การสวมใส่ที่สบาย ไม่ว่าจะเป็นการเดินทางยาวๆ หรือกิจกรรมที่ต้องใช้พลังงานมาก
+                li
+                    h3.subtopic Interest
+                    p รองเท้าของเราไม่เพียงแต่เป็นเครื่องแต่งกาย แต่ยังเป็นคำตอบที่ทันสมัยและสะท้อนตัวตนของคุณ
+        .shoes-image
+            img.shoes-product(src="./images/shoes.png", alt="shoes.png")
+
+    .T-shirt
+        .shirt-image
+            img.shirt-product(src="./images/shirt.png", alt="shirt.png")
+        .shirt-detail
+            h1.type-product T-Shirt
+            ul
+                li
+                    h3.subtopic Modern Design
+                    p เสื้อ T-shirt เป็นผลงานการออกแบบที่ใส่ใจทุกรายละเอียด ด้วยดีไซน์ที่สะดุดตาและโดดเด่น  
+                li
+                    h3.subtopic Quality
+                    p ใช้วัสดุคุณภาพสูงในการผลิตเสื้อ T-shirt เพื่อให้คุณได้รับสินค้าที่มีความคุ้มค่า 
+                li
+                    h3.subtopic Comfort
+                    p ด้วยวัสดุที่นุ่มสบายทำให้เสื้อ T-shirt ของเรามอบความสบายในการสวมใส่ทุกวัน  
+                li
+                    h3.subtopic Variety of Styles
+                    p มีสไตล์และลายละเอียดที่หลากหลายให้คุณเลือก ไม่ว่าจะเป็นสไตล์ที่ง่ายๆหรือสไตล์ที่แสดงออกความเป็นตัวตนของคุณ    
+                li
+                    h3.subtopic Interest
+                    p เสื้อ T-shirt ของเราไม่เพียงแค่เป็นเสื้อผ้า แต่ยังเป็นการแสดงออกเกี่ยวกับสไตล์และบุคลิกภาพของคุณอย่างแท้จริง  
+                li
+                    h3.subtopic Quality Guarantee
+                    p เรามั่นใจในคุณภาพของสินค้าและให้การรับประกันคุณภาพที่เชื่อถือได้
+
+    .jeans
+        .jeans-detail
+            h1.type-product Jeans
+            ul
+                li
+                    h3.subtopic Modern Design
+                    p กางเกงยีนส์เป็นผลงานการออกแบบที่ใส่ใจทุกรายละเอียด ด้วยดีไซน์ที่สะดุดตาและโดดเด่น    
+                li
+                    h3.subtopic Quality
+                    p ใช้วัสดุคุณภาพสูงในการผลิต เพื่อให้คุณได้สินค้าที่มั่นใจในคุณภาพและความทนทาน
+                li
+                    h3.subtopic Comfort
+                    p กางเกงยีนส์ของเรามาพร้อมกับวัสดุที่นุ่มสบาย เพื่อให้คุณได้รับประสบการณ์การสวมใส่ที่สบายที่สุด   
+                li
+                    h3.subtopic Variety of Style
+                    p มีสไตล์ที่หลากหลายให้คุณเลือก ตั้งแต่สไตล์ที่ง่ายๆไปจนถึงสไตล์ที่ทันสมัย
+                li
+                    h3.subtopic Interest
+                    p กางเกงยีนส์ของเราไม่เพียงแค่เป็นเสื้อผ้า แต่ยังเป็นการแสดงตัวตนและสไตล์ของคุณอย่างแท้จริง    
+                li
+                    h3.subtopic Quality Guarantee
+                    p เรามั่นใจในคุณภาพของสินค้าและให้การรับประกันคุณภาพที่เชื่อถือได้      
+        .jeans-image
+            img.jeans-product(src="./images/jeans.png", alt="jeans.png")
+            

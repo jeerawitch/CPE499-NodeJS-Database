@@ -1,0 +1,59 @@
+extends ./layouts/layout.pug
+
+block style
+    link(rel="stylesheet", href="/css/style.css")
+
+block content
+    .container
+        h1 Products
+        hr
+        .container-product
+            .product-card
+                img.product-image(src="./images/samba-og.png", alt="samba-og.png")
+                h2.title-product Shoes
+                p.description-product Adidas Samba OG
+                p.price-product 3,800 Baht
+            .product-card
+                img.product-image(src="./images/Solo-Swoosh.png", alt="Solo-Swoosh.png")
+                h2.title-product T-Shirt
+                p.description-product Nike Solo Swoosh
+                p.price-product 1,200 Baht
+            .product-card
+                img.product-image(src="./images/Levi's-501.png", alt="Levi's-501.png")
+                h2.title-product Jeans
+                p.description-product Levi's 501 Original Jeans
+                p.price-product 1,200 Baht
+            .product-card
+                img.product-image(src="./images/adidas-adicolor.png", alt="adidas-adicolor.png")
+                h2.title-product T-shirt
+                p.description-product Adidas Adicolor Classics 3-Stripes Tee   
+                p.price-product 1,300 Baht
+            .product-card
+                img.product-image(src="./images/lee.png", alt="lee.png")
+                h2.title-product Jeans
+                p.description-product Vintage Y2K Lee Blue Jeans
+                p.price-product 4,300 Baht
+            .product-card
+                img.product-image(src="./images/Adidas-Gazelle.jpeg", alt="Adidas-Gazelle.jpeg")
+                h2.title-product Shoes
+                p.description-product Adidas Gazelle
+                p.price-product 4,300 Baht
+    .container
+        h1 New Product
+        hr
+        div 
+            - if (prods.length > 0)
+                .container-product
+                    each product in prods
+                        .product-card
+                            img.product-image(src=product.imageUrl, alt=product.description)
+                            h2.title-product #{product.title}
+                            p.description-product #{product.description}
+                            p.price-product #{product.price} Baht
+                            .edit-remove 
+                                a.btn-edit(href=`/admin/edit-product/${product._id}?edit=true`) Edit
+                                form(action="/admin/delete-product", method="POST")
+                                    input(type="hidden", name="productId", value=product._id)
+                                    button.btn-delete(type="submit") Delete 
+            - else
+                h1 No Products Found!

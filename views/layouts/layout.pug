@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Ecommerce Website
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+        link(rel="stylesheet", href="/css/layout.css")
+        block style
+    body
+        nav.menu-container
+             
+            input(type="checkbox", aria-label="Toggle menu")
+            span
+            span
+            span
+            
+            a.menu-logo(href="/")
+                img(src="/images/logo.png", alt="logo.png")
+             
+            .menu
+                ul
+                    li
+                        a(href="/") Home 
+                    li
+                        a(href="/products") Product 
+                    li
+                        a(href="/about") About 
+                ul
+                    li
+                        a(href="/addproduct") Add-Product
+
+        block content
+
+        footer.footer-container
+            .payment
+                img.payment-image(src="/images/visa.png", alt="visa.png")
+                img.payment-image(src="/images/mastercard.webp", alt="mastercard.png")
+                img.payment-image(src="/images/paypal.png", alt="paypal.png")
+            h3.footer-text Copyright © Jeerawitch All Rights Reserved.
+        
