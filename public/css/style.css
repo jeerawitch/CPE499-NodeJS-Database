@@ -304,7 +304,8 @@ textarea {
 
 .btn-submit {
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: black;
+  color: white;
   border: 1px solid gray;
   border-radius: 5px;
 }
