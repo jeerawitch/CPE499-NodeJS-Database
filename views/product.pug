@@ -9,32 +9,32 @@ block content
         hr
         .container-product
             .product-card
-                img.product-image(src="./images/samba-og.png", alt="samba-og.png")
+                img.product-image(src="./images/samba-og.png", alt="samba-og.png", loading="lazy")
                 h2.title-product Shoes
                 p.description-product Adidas Samba OG
                 p.price-product 3,800 Baht
             .product-card
-                img.product-image(src="./images/Solo-Swoosh.png", alt="Solo-Swoosh.png")
+                img.product-image(src="./images/Solo-Swoosh.png", alt="Solo-Swoosh.png", loading="lazy")
                 h2.title-product T-Shirt
                 p.description-product Nike Solo Swoosh
                 p.price-product 1,200 Baht
             .product-card
-                img.product-image(src="./images/Levi's-501.png", alt="Levi's-501.png")
+                img.product-image(src="./images/Levi's-501.png", alt="Levi's-501.png", loading="lazy")
                 h2.title-product Jeans
                 p.description-product Levi's 501 Original Jeans
                 p.price-product 1,200 Baht
             .product-card
-                img.product-image(src="./images/adidas-adicolor.png", alt="adidas-adicolor.png")
+                img.product-image(src="./images/adidas-adicolor.png", alt="adidas-adicolor.png", loading="lazy")
                 h2.title-product T-shirt
                 p.description-product Adidas Adicolor Classics 3-Stripes Tee   
                 p.price-product 1,300 Baht
             .product-card
-                img.product-image(src="./images/lee.png", alt="lee.png")
+                img.product-image(src="./images/lee.png", alt="lee.png", loading="lazy")
                 h2.title-product Jeans
                 p.description-product Vintage Y2K Lee Blue Jeans
                 p.price-product 4,300 Baht
             .product-card
-                img.product-image(src="./images/Adidas-Gazelle.jpeg", alt="Adidas-Gazelle.jpeg")
+                img.product-image(src="./images/Adidas-Gazelle.jpeg", alt="Adidas-Gazelle.jpeg", loading="lazy")
                 h2.title-product Shoes
                 p.description-product Adidas Gazelle
                 p.price-product 4,300 Baht
@@ -46,7 +46,7 @@ block content
                 .container-product
                     each product in prods
                         .product-card
-                            img.product-image(src=product.imageUrl, alt=product.description)
+                            img.product-image(src=product.imageUrl, alt=product.description, loading="lazy")
                             h2.title-product #{product.title}
                             p.description-product #{product.description}
                             p.price-product #{product.price} Baht
